@@ -1,1 +1,81 @@
-<h1>this is portal</h1>
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <title>Maria O'Sullivan's: Responsive Website</title>
+  <meta charset="utf-8" />
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="css/portal.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/forms.css" />
+ </head>
+ <body>
+     <header>
+     <h1>Maria O'Sullivan</h1>
+        <nav class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Home</a>
+            <a href="https://altohearts.github.io/time-of-day/index.html" target="_blank">Time Of Day</a>
+            <a href="https://altohearts.github.io/daily-grind/index.html" target="_blank">Daily Grind</a>
+            <a href="https://altohearts.github.io/dom-play/index.html" target="_blank">DOM Play</a>
+            <a href="https://github.com/AltoHearts" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/maria-o-sullivan-259bb51b9" target="_blank">LinkedIn</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </nav>
+     </header>
+     
+   <main class="wrapper">
+     <!--
+     <img class="desktop" src="images/desktop.jpg" alt="Photo of an adorable GSD puppy" />
+       
+     <img class="tablet" src="images/tablet.jpg" alt="Photo of an adorable GSD puppy" />
+       
+     <img class="phone" src="images/phone.png" alt="Photo of an adorable but large GSD in the lap of his best buddy" />
+     -->  
+        <picture class="profile">
+            <source media="(min-width: 1200px)" srcset="images/keys.jpg">
+            <source media="(min-width: 501px)" srcset="images/meselfie.jpg">
+            <img src="images/talky.jpg" alt="That's me!" />
+        </picture>   
+       <h2 class="subheader">About Me</h2>
+       
+       <p>We are not limited in what we can create, but by what we can imagine.</p>
+       <p> My name is Maria O'Sullivan, and I an digtital artist, and software engineering student.</p>
+        
+        <p>I strive to live life creatively and honestly. Life, art, and programing are all collaborative mediums,
+        and often times differnt perspectives will make or break a project. 
+        I offer a fresh minset and explorative thought processes on any project I undertake,
+        all while delivering a high quality product in a timely manner.</p>
+        
+        <p>Email me at mosullivan@sea.yearup.org if creativity, kindess, 
+        and quality results are values you want on your team. </p>
+
+        <h2>Always Growing</h2>
+        <p> I am currently persuing an education in software development through Year Up's certificate program. I have a passion for creativity, innovation, and technology that I strive to bring into ever aspect of my life. 
+          At age 19, I cofounded a software development company named PolyWare Studios where I worked as the creative executive. Back then I didnt know much about the software development lifecycle,
+          but through my time at Year Up I've gained a lot of insight and knowledge. The connections I've made are invaulable, and am eager to emerge into the inustry. Curently, I own and operate my own digital art business, AltoHearts Creations. 
+          Which I opperate in my free time outside of work and school. I’m dedicated to becoming a software engineer. With strong leadership skills, and an entrepreneurial spirit, I would love to connect with others inside the tech industry</p>
+       
+       
+       <p>Copyright [2014-2020] [<a href="http://newmanix.com/sara.php">Sara Newman</a>]. Licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License, Version 2.0</a>
+        </p>
+
+     <footer>
+      <p><small>&copy; 2019 by <a href="contact.php">Contact Maria O'Sullivan </a>, All Rights Reserved ~ <a href="https://validator.w3.org/check/referer" target="_blank">Valid HTML</a> ~ <a href="https://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a></small></p>
+    </footer>
+  </main>
+     
+  <!-- Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon -->
+     
+  <script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }   
+  </script>
+     
+ </body>
+</html>
